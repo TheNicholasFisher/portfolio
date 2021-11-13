@@ -223,13 +223,13 @@ body {
     }
 
     .counter {
-        font-size: 70px;
+        font-size: 2em;
     }
 
 
     .links {
         color: black;
-        font-size: 50px;
+        font-size: 1em;
         text-align: center;
         margin: 0;
     }
