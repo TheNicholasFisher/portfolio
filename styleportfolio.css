@@ -36,9 +36,19 @@ header {
     width: 100px;
 }
 
-a:hover{
-    font-size: larger;
+a {
+    text-decoration: none; 
+    color: black; 
 }
+
+.links a:hover{
+    font-size: 73px;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
 
 .main-image {
     text-align: center;
@@ -77,16 +87,6 @@ body {
     text-align: center;
     margin: 0;
 }
-
-
-a {
-    text-decoration: none;
-}
-
-a:visited { 
-    text-decoration: none; 
-    color: black; 
-   }
 
 @keyframes fadeIn {
     0% {
@@ -155,16 +155,6 @@ a:visited {
         text-align: center;
         margin: 0;
     }
-    
-    
-    a {
-        text-decoration: none;
-    }
-    
-    a:visited { 
-        text-decoration: none; 
-        color: black; 
-       }
     
     @keyframes fadeIn {
         0% {
