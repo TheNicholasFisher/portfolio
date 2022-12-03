@@ -24,17 +24,17 @@ header {
 }
 
 .opacity {
-    opacity: 100;
-    -webkit-animation: opacity calc(var(--index)*.25s) 1 ease-in;
+    opacity: 0;
+    animation-name: opacity;
+    animation-delay: calc(var(--index)*.1s);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 
 @-webkit-keyframes opacity  {
     0%{
         opacity: 0;
-    }
-    40%{
-        opacity: 0; 
     }
     100% {
         opacity: 100;
