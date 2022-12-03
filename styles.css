@@ -9,6 +9,7 @@ html{
 
 h1{
     font-size: 60px;
+    padding-bottom: 20px;
 }
 
 header {
@@ -112,6 +113,9 @@ footer h2{
 
 @media (min-width: 950px)
 {
+.view{
+    padding-left: 10px;
+}
 
 footer{
     top: 10px;
