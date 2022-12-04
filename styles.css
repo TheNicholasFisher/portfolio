@@ -75,7 +75,6 @@ a:hover{
 footer{
     font-family: Poppins,Poppins,monospace;
     position: fixed;
-    text-align: right;
 }
 
 footer a{
@@ -97,12 +96,13 @@ footer a:hover{
     }
 
     footer{
+        text-align: left;
         font-size: 14px;
         bottom: 0px;
         left: 0px;
         background-color: rgb(169, 169, 169);
         width: 100%;
-        padding-right: 20px;
+        padding-left: 20px;
         margin-top: 0px;
     }
 
@@ -135,6 +135,7 @@ footer h2{
     }
 
     footer{
+        text-align: right;
         top: 10px;
         right: 10px;
     }
