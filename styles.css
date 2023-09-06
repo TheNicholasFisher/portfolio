@@ -41,6 +41,10 @@ header {
     }
 }
 
+li{
+    list-style-type: disc;
+}
+
 ul{
     padding-left: 30px;
 }
