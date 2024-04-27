@@ -6,6 +6,18 @@ html{
     
 }
 
+#deadPixel{
+    z-index: 10;
+    width: 1px;
+    height: 1px;
+    position: fixed;
+    top: 400px;
+    left: 300px;
+    -webkit-backdrop-filter: invert(1);
+    backdrop-filter: invert(1);
+    pointer-events: none;
+}
+
 h1{
     font-size: 60px;
     padding-bottom: 20px;
@@ -51,7 +63,7 @@ ul{
 
 .idkwhattocallthis{
     font-style: italic;
-    color: rgb(112, 112, 112);;
+    color: rgb(112, 112, 112);
 }
 
 .idkwhattocallthis hr{
@@ -93,6 +105,9 @@ footer a:hover{
 
 @media (max-width: 949px)
 {
+    #deadPixel{
+        display: none;
+    }
 
     h2{
         margin-top: 5px;
