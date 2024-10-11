@@ -42,8 +42,9 @@ h4{
 .social-link {
     color: rgb(90, 90, 90);
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     font-weight: bold;
+    font-size: 2.3vw;
 }
 
 .social-media a:hover {
@@ -128,4 +129,13 @@ background-image: url('Dollar.jpg');
 #box7 {
     background-image: url('OWZA.webp');
 }
+
+#box8 {
+    background-image: url('OT.webp');
+}
+
+#box9 {
+    background-image: url('HP.webp');
+}
+
 
