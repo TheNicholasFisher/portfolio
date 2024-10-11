@@ -1,161 +1,131 @@
-html{
-    background-color: rgb(235, 235, 235);
-    margin: 0 auto;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Poppins,Poppins,sans-serif;
-    
-}
-
-#deadPixel{
-    z-index: 10;
-    width: 1px;
-    height: 1px;
-    position: fixed;
-    top: 400px;
-    left: 300px;
-    -webkit-backdrop-filter: invert(1);
-    backdrop-filter: invert(1);
-    pointer-events: none;
-}
-
+  }
+  
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
 h1{
-    font-size: 60px;
-    padding-bottom: 20px;
+    font-size: 5vw;
+}
+h2{
+    font-size: 3vw;
 }
 
-header {
-    padding-left: 40px;
+h3{
+    font-size: 7vw;
 }
 
-.description{
-    padding-left: 40px;
-    padding-right: 10px;
-    line-height: 23px;
-    max-width: 890px;
-    margin-bottom: 60px;
+h4{
+    font-size: 2vw;
 }
 
-.opacity {
-    opacity: 0;
-    animation-name: opacity;
-    animation-delay: calc(var(--index)*.1s);
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+.social-media {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.social-link {
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.social-media a:hover {
+    color: rgb(52, 52, 52);
+}
+
+.box {
+position: sticky;
+top: 0;
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+z-index: 2;
 }
 
 
-@-webkit-keyframes opacity  {
-    0%{
-        opacity: 0;
-    }
-    100% {
-        opacity: 100;
-    }
+.projects{
+border-top:1px solid black;
+border-bottom:1px solid black;
 }
 
-li{
-    list-style-type: disc;
+.content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+text-align: center;
 }
 
-ul{
-    padding-left: 30px;
+#first{
+    z-index: 0;
 }
 
-.idkwhattocallthis{
-    font-style: italic;
-    color: rgb(112, 112, 112);
+.black{
+color: black;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.idkwhattocallthis hr{
-    max-width: 800px;
-    margin-left:0;
-    border: 1px solid black;
+.white a{
+color: white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.view{
-    position: relative;
-    margin-top: -30px;
-    display: inline-block;
+.white a:hover {
+color: rgb(211, 211, 211);
+}
+
+.black a:hover {
+color: rgb(55, 55, 55);
 }
 
 a{
-    font-weight: bold;
     text-decoration: none;
-    color: rgb(69, 69, 69);
 }
 
-a:hover{
-    color: black;
+#box1 {
+background-image: url('FGFM.png');
 }
 
-footer{
-    font-family: Poppins,Poppins,monospace;
-    position: fixed;
+#box2 {
+background-image: url('TDOSS.png');
 }
 
-footer a{
-    text-decoration: none;
-    color: blue
+#box3 {
+background-image: url('Bigler.png');
 }
 
-footer a:hover{
-    color: rgb(46, 46, 46);
+#box4 {
+background-image: url('PSUPlanes.jpg');
 }
 
-
-@media (max-width: 949px)
-{
-    #deadPixel{
-        display: none;
-    }
-
-    h2{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    footer{
-        text-align: left;
-        font-size: 14px;
-        bottom: 0px;
-        left: 0px;
-        background-color: rgb(169, 169, 169);
-        width: 100%;
-        padding-left: 20px;
-        margin-top: 0px;
-    }
-
-    .bottom{
-        margin-bottom: 120px;
-    }
-
-    ul{
-        padding-left: 15px;
-    }
-
-    header {
-        padding-left: 20px;
-    }
-    
-    .description{
-        padding-left: 20px;
-        line-height: 25px;
-    }
+#box5 {
+background-image: url('Skull.jpg');
 }
 
-footer h2{
-    margin-right: 20px;
+#box6 {
+background-image: url('Dollar.jpg');
 }
 
-@media (min-width: 950px)
-{
-    .view{
-        padding-left: 10px;
-    }
-
-    footer{
-        text-align: right;
-        top: 10px;
-        right: 10px;
-    }
+#box7 {
+    background-image: url('OWZA.webp');
 }
+
