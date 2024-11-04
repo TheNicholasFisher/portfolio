@@ -74,6 +74,7 @@ z-index: 2;
 
 .slider{
     margin-bottom: 120px;
+    background-color: rgb(131, 131, 131);
 }
 
 
@@ -153,6 +154,10 @@ background-image: url('Future.PNG');
 
 #box9 {
     background-image: url('HP.webp');
+}
+
+#box10 {
+    background-image: url('ccard.png');
 }
 
 
