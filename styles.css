@@ -67,9 +67,12 @@ position: sticky;
 top: 0;
 width: 100%;
 height: 100vh;
-background-size: cover;
-background-position: center;
 z-index: 2;
+}
+
+.repeat{
+    background-size: cover;
+    background-position: center;
 }
 
 .slider{
@@ -158,6 +161,12 @@ background-image: url('Future.PNG');
 
 #box10 {
     background-image: url('ccard.png');
+}
+
+#top {
+    background-image: url('STS.png');
+    background-repeat: repeat !important;
+    background-position: center;
 }
 
 
