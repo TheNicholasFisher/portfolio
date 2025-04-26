@@ -88,6 +88,16 @@ function updateButtonState() {
       "you see that ishowspeed stream?",
       "am i blocked?",
       "can i block your number?",
+      "you look JUST like your dad",
+      "i got a parking ticket yesterday and was pretty bummed about it. but then i remembered youre no longer in my life and that made me feel much better",
+      "connact back on linkedin",
+      "match back on tinder",
+      "can you rate my new hinge profile?",
+      "james said you wanted to talk to me?",
+      "lebron or jordan?",
+      "The Lord laughs at the wicked, for he knows their day is coming",
+      "i cant do this anymore",
+      "can you drive me to the airport on the 13th?",
       "im planning a lake trip rn. would you be down to come?"];
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
     const smsLink = `sms:${phone}?body=${encodeURIComponent(randomMessage)}`;
