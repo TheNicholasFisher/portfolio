@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200&display=swap');
+
+body{
+
+    align-items: center;
+    background: #f4f4f4;
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.all{
+    display: block;
+
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+    background: white;
+    padding: 20px;
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.heart{
+    position: absolute;
+    max-height: 30px;
+}
+
+.heart img{
+    max-height: 20px;
+}
+
+.heart1{
+    top: -14px;
+    left: -14px;
+
+    rotate: -10deg;
+    animation: spin1 3s ease-in-out infinite;
+}
+
+.heart2{
+    bottom: -14px;
+    right: -14px;
+
+    rotate: 10deg;
+    animation: spin2 4s ease-in-out infinite;
+}
+
+
+input{
+    padding: 10px;
+    width: 60%;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    
+}
+
+.top{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left:4px;
+    padding-right:4px;
+}
+
+h1{
+    padding-top: 40px;
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5{
+    color: gray;
+}
+
+button.active {
+    background-color: #4CAF50;
+}
+
+button:hover {
+    filter: brightness(1.05);
+}
+
+@keyframes spin1 {
+    0% { transform: rotate(-6deg); }
+    50% { transform: rotate(6deg); }
+    100% { transform: rotate(-6deg); }
+}
+
+@keyframes spin2 {
+    0% { transform: rotate(6deg); }
+    50% { transform: rotate(-6deg); }
+    100% { transform: rotate(6deg); }
+}
