@@ -86,6 +86,8 @@ function updateButtonState() {
       "have you been dreaming more?",
       "i got a great deal on an appartment in bushwick",
       "you see that ishowspeed stream?",
+      "am i blocked?",
+      "can i block your number?",
       "im planning a lake trip rn. would you be down to come?"];
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
     const smsLink = `sms:${phone}?body=${encodeURIComponent(randomMessage)}`;
