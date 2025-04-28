@@ -55,12 +55,16 @@ h3{
 }
 
 .website{
+
+    display: grid;
+    align-items: center;
     
+
     margin: auto;
     margin-bottom: 15px;
     width: 95%;
     max-width: 600px;
-    max-height: 300px;
+    height: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -69,6 +73,8 @@ h3{
 
     background-position: center;
 }
+
+
 
 #box12 {
     background-image: url('nocontact.png');
