@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta data-n-head="ssr" name="keywords" content="family, guy, family guy, family guy funny moments, family guy clips, seth macfarlane, nick, fisher, nicholas">
+    <meta data-n-head="ssr" name="referrer" content="no-referrer">
+    <meta data-n-head="ssr" name="title" content="Random Family Guy Funny Moment">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="A random Family Guy funny moment on each refresh.">
+    <meta data-n-head="ssr" name="keywords" content="Nicholas Fisher">
+    <meta data-n-head="ssr" name="twitter:card" content="summary_large_image">
+    <meta data-n-head="ssr" name="twitter:site" content="@oddityprogidy">
+    <meta data-n-head="ssr" name="twitter:title" content="Random Family Guy Funny Moment">
+    <meta data-n-head="ssr" name="twitter:description" content="A random Family Guy funny moment on each refresh.">
+    <meta data-n-head="ssr" name="twitter:image:src" content="https://familyguyfunnymoments.com/thumbnail-twitter.png">
+    <meta data-n-head="ssr" name="og:title" property="og:title" content="Random Family Guy Funny Moment">
+    <meta data-n-head="ssr" name="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" name="og:url" property="og:url" content="https://familyguyfunnymoments.com">
+    <meta data-n-head="ssr" name="og:image" property="og:image" content="https://familyguyfunnymoments.com/thumbnail-facebook.png">
+    <meta data-n-head="ssr" name="og:description" property="og:description" content="A random Family Guy funny moment on each refresh.">
+    <meta data-n-head="ssr" name="og:site_name" property="og:site_name" content="Random Family Guy Funny Moment">
+    <meta data-n-head="ssr" meta="theme-color" content="#ffffff">
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>A Random Family Guy Funny Moment</title>
+    
+</head>
+<body>
+    <div id="overlay">
+        <button id="playButton">Play Funny Moment</button>
+    </div>
+    <video id="randomVideo" autoplay playsinline></video>
+    <a href="https://nickfisher.xyz" target="_blank">
+        <img src="favicon.png" alt="Link Image" id="mainSite">
+    </a>
+    <input type="checkbox" id="toggleCheckbox" />
+    <label for="toggleCheckbox" id="toggled">
+        <img src="questionmark.png" alt="Toggle Paragraph" id="question">
+    </label>
+    <p id="popup">TikTok content automation farms have found that Family Guy consistently delivers the highest audience retention and the most positive engagement. Why not indulge in a quick laugh with every page refresh? It’s the easiest way to get your dopamine fix without even trying.</p>
+    
+    <script src="script.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+        const playButton = document.getElementById('playButton');
+        const video = document.getElementById('randomVideo');
+        const overlay = document.getElementById('overlay');
+
+        video.pause();
+        video.muted = true;
+        video.removeAttribute('autoplay');
+
+        playButton.addEventListener('click', function () {
+            overlay.style.display = 'none';
+            video.muted = false;
+            video.play();
+        });
+
+            if (event.target !== playButton) {
+                video.pause();
+            }
+        });
+</script>
+
+</body>
+
+</html>
