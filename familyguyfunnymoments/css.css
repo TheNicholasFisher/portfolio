@@ -1,0 +1,128 @@
+
+@font-face{
+    font-family: 'Famig';
+    src: url(Famig___.ttf), format('ttf');
+}
+
+html {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: 'Famig';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background: url(backdrop.png) no-repeat fixed; 
+
+    background-position-x: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+video {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+#overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#playButton {
+    padding: 10px 10px;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Famig';
+    
+    color: #00A0D4;
+    text-shadow: black -2px 2px;
+    box-shadow: -3px 3px black;
+}
+
+#playButton:hover {
+    margin-top: 3px;
+    margin-left: -3px;
+    box-shadow: 0px 0px;
+}
+
+#mainSite {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 65px;
+    height: auto;
+    cursor: pointer;
+}
+
+#question {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: auto;
+    cursor: pointer;
+}
+
+#toggleCheckbox {
+    display: none;
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00A0D4;
+    text-shadow: black -2px 2px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 85%;
+    max-width: 700px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#toggleCheckbox:checked ~ #popup {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#toggleCheckbox:checked + #toggled #question {
+    content: url('x.png');
+}
